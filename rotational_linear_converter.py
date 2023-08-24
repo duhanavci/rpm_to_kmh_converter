@@ -66,12 +66,12 @@ class rotational_linear_converter(QMainWindow):
     def toggle_conversion_direction(self):
         self.rot_to_lin = not self.rot_to_lin
         if self.rot_to_lin:
-            self.direction_button.setText("rotational to lineer")
+            self.direction_button.setText("rotational to linear")
             self.ui.rpm_input.setEnabled(True)
             self.ui.kmh_input.setEnabled(False)
             self.changePosition()
         else:
-            self.direction_button.setText("lineer to rotational")
+            self.direction_button.setText("linear to rotational")
             self.ui.rpm_input.setEnabled(False)
             self.ui.kmh_input.setEnabled(True)
             self.changePosition()
