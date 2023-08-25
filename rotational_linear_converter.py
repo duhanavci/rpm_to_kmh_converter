@@ -23,7 +23,7 @@ class rotational_linear_converter(QMainWindow):
 
     def show_help_window(self):
         self.help_window = loadUi("help.ui")  
-        self.help_window.show()  # Yardım penceresini göster
+        self.help_window.show()  
 
     def change_convertion_direction_button(self):
         self.direction_button.clicked.connect(self.toggle_conversion_direction)
